@@ -8,7 +8,7 @@
     "prod": "webpack-dev-server --open --config ./config/webpack/webpack.dev.js",
     "build": "webpack --config ./config/webpack/webpack.prod.js",
     "test": "jest --config=config/jest/jest.config.js",
-    "lint": "stylelint 'src /**/*.scss' \n eslint --debug src/  "
+    "lint": "stylelint 'src /**/*.scss' && eslint --debug src/  "
   },
   "author": "",
   "license": "ISC",
