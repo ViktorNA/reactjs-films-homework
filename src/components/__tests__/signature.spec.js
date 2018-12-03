@@ -16,8 +16,3 @@ test('Test props', () => {
     expect(res.props.children).toEqual(['Hello, ', 'Ivan Ivanov']);
 });
 
-test('Test props', () => {
-    renderer.render(<Signature name={[1,2]} />);
-    const res = renderer.getRenderOutput();
-    expect(res.props.children).toEqual(['Hello, ', 'Ivan Ivanov']);
-});
