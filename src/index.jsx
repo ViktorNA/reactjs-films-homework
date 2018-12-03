@@ -5,7 +5,7 @@ import Signature from './components/Signature.jsx'
 
 
 render(
-  <Signature name="Vi ktor"/>,
+  <Signature name="Viktor"/>,
   document.getElementById('root')
 )
 
