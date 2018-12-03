@@ -3,8 +3,12 @@ node_js:
   - "11.1.0"
 cache:
   directories:
+<<<<<<< HEAD
     - node_modules
 install:
   - npm install
 script:
   - npm run test
+=======
+- node_modules
+>>>>>>> 37944a8af6c6f88cb916813bbf5f1ba9da245c97
