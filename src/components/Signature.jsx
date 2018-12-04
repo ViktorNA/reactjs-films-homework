@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
 import propTypes from 'prop-types';
+import React, { Component } from 'react';
 import style from './index.scss';
 
 export default class Signature extends Component {
@@ -9,9 +9,9 @@ export default class Signature extends Component {
 }
 
 Signature.propTypes = {
-  name: propTypes.string
-}
+  name: propTypes.string,
+};
 
 Signature.defaultProps = {
-  name: 'Stranger'
+  name: 'Stranger',
 };

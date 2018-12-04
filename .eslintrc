@@ -1,3 +1,15 @@
 {
-    "extends": "airbnb/base"
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb/base",
+        "plugin:react/recommended",
+        "plugin:jest/recommended"
+    ],
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "rules": {
+        "react/prop-types": [2]
+    }
 }
