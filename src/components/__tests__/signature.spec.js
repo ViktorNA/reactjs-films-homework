@@ -11,7 +11,7 @@ test('Props not undefined', () => {
 });
 
 test('Test props', () => {
-  renderer.render(<Signature name="Ivan Ivanov" />);
+  renderer.render(<Signature name="Nickname" />);
   const res = renderer.getRenderOutput();
-  expect(res.props.children).toEqual(['Hello, ', 'Ivan Ivanov']);
+  expect(res.props.children).toEqual(['Hello, ', 'Nickname']);
 });
