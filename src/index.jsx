@@ -1,7 +1,7 @@
 import 'babel-polyfill'
 import React from 'react'
 import { render } from 'react-dom'
-import Signature from './components/Signature.jsx'
+import Signature from './components/Component1/Signature.jsx'
 
 
 render(
@@ -9,4 +9,5 @@ render(
   document.getElementById('root')
 )
 
-module.hot.accept()
+if(module.hot)
+  module.hot.accept()

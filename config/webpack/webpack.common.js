@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: "./src/index.jsx",
     output: {
         path: path.join(__dirname, "../../build"),
@@ -12,7 +11,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./index.html",
+            template: "./src/index.html",
             filename: "./index.html"
         }),
         new MiniCssExtractPlugin({

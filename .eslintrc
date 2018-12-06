@@ -10,6 +10,14 @@
         "import"
     ],
     "rules": {
-        "react/prop-types": [2]
+        "react/prop-types": [2],
+        "no-console": "off"
+    },
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "version": "16.5.20"
+        }
     }
 }
