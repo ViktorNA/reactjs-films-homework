@@ -1,13 +1,15 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.jsx",
     output: {
         path: path.join(__dirname, "../../build"),
         filename: "js/[name]-[hash].js"
+    },
+    resolve: {
+        extensions: [' ', '.js', '.jsx'],
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -17,8 +19,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "css/[name]-[hash].css",
             chunkFilename: "[id].css"
-        }),
-        new CleanWebpackPlugin(['build'])
+        })
     ],
     module: {
         rules: [
