@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import React, { Component } from 'react';
-import style from './index.scss';
+import style from './Signature.scss';
 
 export default class Signature extends Component {
   render() {
