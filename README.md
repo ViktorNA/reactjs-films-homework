@@ -1,2 +1,2 @@
 # reactjs-films-homework
-Part-1: ![Part-1](https://travis-ci.org/ViktorNA/reactjs-films-homework.svg?branch=Part-1)
+[![Build Status](https://travis-ci.org/ViktorNA/reactjs-films-homework.svg?branch=master)](https://travis-ci.org/ViktorNA/reactjs-films-homework)
