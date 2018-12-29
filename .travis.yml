@@ -1,11 +1,7 @@
 language: node_js
 node_js:
-  - "11.1.0"
-cache:
-  directories:
-- node_modules
-install:
-  - npm install
+  - "v9.5.0"
+
 script:
   - npm run test
   - npm run lint
