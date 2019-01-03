@@ -6,10 +6,11 @@ module.exports = {
   testMatch: ['<rootDir>/**/__tests__/**/*.js?(x)', '<rootDir>/**/?(*.)+(spec|test).js?(x)'],
   verbose: true,
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/components/**/*.{js,jsx}'],
-  coverageDirectory: '../../src/coverage',
+  collectCoverageFrom: ['<rootDir>/**/*.{js,jsx}'],
+  coverageDirectory: '../../coverage',
   coveragePathIgnorePatterns: [
     'coverage',
+    '<rootDir>/index.jsx',
   ],
   moduleFileExtensions: ['js', 'jsx'],
   coverageThreshold: {
