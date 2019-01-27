@@ -1,11 +1,10 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import Signature from './components/Signature/Signature';
-
+import Wrapper from './components/index';
 
 render(
-  <Signature name="Viktor" />,
+  <Wrapper />,
   document.getElementById('root'),
 );
 

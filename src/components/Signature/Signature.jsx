@@ -4,7 +4,12 @@ import style from './Signature.scss';
 
 export default class Signature extends Component {
   render() {
-    return <div className={style.green}>Hello, {this.props.name}</div>
+    return (
+      <div className={style.green}>
+Hello,
+        {this.props.name}
+      </div>
+    );
   }
 }
 

@@ -1,0 +1,86 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.item {
+  color: #0aaee4;
+  font-weight: 400;
+  padding: 0;
+  padding-bottom: 3px;
+  margin-right: 20px;
+  border: 0;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.active {
+  composes: item;
+  border-bottom: 2px solid #0aaee4;
+  font-weight: 700;
+}
+
+.stick {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  top: -2px;
+  border-bottom: 2px solid #0aaee4;
+}
+
+.leftStick {
+  composes: stick;
+  transform: rotate(40deg);
+  left: 2px;
+}
+
+.rightStick {
+  composes: stick;
+  transform: rotate(-40deg);
+}
+
+.stickBox {
+  display: inline;
+}
+
+.blocks {
+  display: inline-grid;
+  grid-gap: 1px;
+  width: 17px;
+  grid-template-columns: auto auto;
+  margin: 3px;
+}
+
+.block {
+  background-color: rgba(59, 180, 224, 0.8);
+  width: 8px;
+  height: 7px;
+  border-radius: 1px;
+}
+
+.sortWrap {
+  background-color: rgba(59, 180, 224, 0);
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+
+.lines {
+  composes: blocks;
+  grid-template: 1fr/1fr;
+}
+
+.line {
+  composes: block;
+  background-color: rgba(36, 43, 45, 0.15);
+  width: 17px;
+}
+
+.left {
+  display: inline-block;
+}
+
+.right {
+  display: inline-block;
+}

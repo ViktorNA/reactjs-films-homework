@@ -7,9 +7,10 @@ module.exports = merge(common, {
     devtool: 'inline-source-map',
     entry: [
         './src/index.jsx',
-        'webpack-hot-middleware/client?path=/__webpack_hmr&reload=true'
+        'webpack-hot-middleware/client?path=/__webpack_hmr&reload=true',
     ],
     plugins: [
+        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
     ]

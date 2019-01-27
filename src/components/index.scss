@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../assets/fonts/HelveticaNeue-Roman.woff");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+.body,
+input,
+button {
+  font-family: HelveticaNeue, Arial, sans-serif;
+}
+
+.body {
+  min-width: 750px;
+}
