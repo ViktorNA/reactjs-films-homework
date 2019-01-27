@@ -33,11 +33,9 @@ export default class MovieCard extends Component {
 
   getGenresList(genres) {
     let str = '';
-    for(let i=0; i<3; i++){
-      if(i===2||i===genres.length-1)
-        str+=genres[i];
-      else  
-        str = str + genres[i] + ', ';
+    for (let i = 0; i < 3; i+=1) {
+      if (i === 2 || i === genres.length - 1) str += genres[i];
+      else { str = `${str + genres[i]}, `; }
     }
     return str;
   }

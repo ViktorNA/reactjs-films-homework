@@ -7,7 +7,7 @@ export default class Info extends Component {
   getGenres(genres, duration) {
     return (
       <div>
-        {genres.map( (x,i) => (
+        {genres.map((x, i) => (
           <div className={styles.item} key={i}>{x}</div>
         ))}
         <div className={styles.item}>|</div>
@@ -81,8 +81,7 @@ Info.defaultProps = {
     name: 'error',
     description: 'error',
     rating: 0,
-    genres: ["uncnown genre"],
+    genres: ['uncnown genre'],
     duration: '0h 0m',
-    description: 'error',
   },
 };

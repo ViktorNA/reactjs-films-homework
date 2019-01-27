@@ -15,8 +15,8 @@ movies.fill({
 
 const Movies = () => (
   <div className={styles.item}>
-    {movies.map( (movie, i) => (
-      <MovieCard movie={movie} key={i}/>
+    {movies.map((movie, i) => (
+      <MovieCard movie={movie} key={i} />
     ))}
   </div>);
 
