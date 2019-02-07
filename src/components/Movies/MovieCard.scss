@@ -1,0 +1,207 @@
+.card {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.6em;
+  position: relative;
+  height: 100px;
+  margin-top: 19px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  color: white;
+}
+
+.visibleDesc {
+  composes: description;
+  display: block;
+}
+
+.hiddenDesc {
+  composes: description;
+  display: none;
+}
+
+.imgWrapper {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background-size: cover;
+  background-position: center;
+}
+
+.back {
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 0;
+  bottom: 0%;
+  z-index: 2;
+  padding: 20px;
+  width: inherit;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 1s;
+}
+
+.backShort {
+  composes: back;
+  height: 80px;
+  color: black;
+  background-color: white;
+}
+
+.backLong {
+  composes: back;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.64);
+  color: white;
+}
+
+.close {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border: none;
+}
+
+.close::before,
+.close::after {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  content: ' ';
+  height: 18px;
+  width: 1px;
+  background-color: white;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.movieName {
+  font-size: 14px;
+  text-align: left;
+  width: 150px;
+  border: 0;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0);
+  color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0;
+}
+
+.closeWrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.ratingBox {
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  margin-left: 24px;
+  width: 28px;
+  border: 1px solid #47c3f0;
+  border-radius: 3px;
+  color: #47c3f0;
+}
+
+.genresBox {
+  font-size: 11px;
+  color: #47c3f0;
+}
+
+.watchNowButton {
+  font-size: 14px;
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  background-color: #3bb4e0;
+  width: 100px;
+  height: 30px;
+  margin-top: 23px;
+}
+
+.triangle {
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 16px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 16px solid transparent;
+  position: absolute;
+  bottom: 15px;
+  left: 23px;
+}
+
+.circle {
+  display: grid;
+  grid-column: 2/3;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #3bb4e0;
+  border-radius: 50%;
+}
+
+.watchWrapper {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-items: center;
+  margin-top: 35px;
+}
+
+.label {
+  display: grid;
+  grid-column: 2/3;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.head {
+  display: block;
+}
+
+.shortHead {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 80px;
+  width: inherit;
+  background-color: white;
+  color: black;
+}
+
+.viewInfoButton {
+  grid-column: 2/3;
+  margin-top: 27px;
+  font-size: 14px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  width: 100px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0);
+  align-content: center;
+}

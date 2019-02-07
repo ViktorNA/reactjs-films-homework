@@ -16,7 +16,8 @@ module.exports = {
   moduleFileExtensions: ['js', 'jsx'],
   coverageThreshold: {
     global: {
-      functions: 100
+      functions: 100,
+      lines: 100,
     },
   },
   moduleNameMapper:  {

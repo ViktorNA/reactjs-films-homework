@@ -4,25 +4,23 @@ import styles from './info.scss';
 import backImg from '../../assets/images/cover-image.jpg';
 
 export default class Info extends Component {
-  getGenres(genres, duration) {
-    return (
-      <div>
-        {genres.map((x, i) => (
-          <div className={styles.item} key={i}>{x}</div>
-        ))}
-        <div className={styles.item}>|</div>
-        <div className={styles.item}>{duration}</div>
-      </div>
-    );
-  }
+  getGenres = (genres, duration) => (
+    <div>
+      {genres.map(x => (
+        <div className={styles.item} key={x}>{x}</div>
+      ))}
+      <div className={styles.item}>|</div>
+      <div className={styles.item}>{duration}</div>
+    </div>
+  )
 
-  getRating(rating) {
+  getRating = (rating) => {
     const stars = Math.ceil(rating);
     const array = Array.from({ length: stars }, x => x);
     return (
       <div className={styles.starBox}>
-        {array.map((x, i) => (
-          <div className={styles.star} key={i} />
+        {array.map(x => (
+          <div className={styles.star} key={x} />
         ))}
       </div>
     );
@@ -40,12 +38,7 @@ export default class Info extends Component {
     } = this.props;
     return (
       <div style={{ backgroundImage: `url(${backImg})` }} className={styles.wrapper}>
-        <div className={styles.topShadow} />
         <div className={styles.bottomShadow} />
-        <div className={styles.filmsLabel}>FILMS</div>
-        <div className={styles.searchBox}>
-          <input className={styles.searchInput} placeholder="the jungle book" />
-        </div>
         <div className={styles.infoBox}>
           <div className={styles.movieName}>{name}</div>
           <div className={styles.genresBox}>{this.getGenres(genres, duration)}</div>
