@@ -5,7 +5,7 @@ import Info from '../Info';
 describe('Snapshot test', () => {
   it('works correctly', () => {
     const testRender = TestRenderer.create(<Info />);
-    expect(testRender.toJSON).toMatchSnapshot();
+    expect(testRender.toJSON()).toMatchSnapshot();
   });
 });
 

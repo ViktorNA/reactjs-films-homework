@@ -1,26 +1,33 @@
 import propTypes from 'prop-types';
 import React, { Component } from 'react';
+import uniqid from 'uniqid';
 import styles from './info.scss';
-import backImg from '../../assets/images/cover-image.jpg';
+
+const baseUrl = 'https://image.tmdb.org/t/p/original/';
+
+const mainMovie = require('../../assets/json/505954.json');
 
 export default class Info extends Component {
-  getGenres = (genres, duration) => (
-    <div>
-      {genres.map(x => (
-        <div className={styles.item} key={x}>{x}</div>
-      ))}
-      <div className={styles.item}>|</div>
-      <div className={styles.item}>{duration}</div>
-    </div>
-  )
+  getGenres = (genres, duration) => {
+    const dur = `${Math.floor(duration / 60)}h ${duration % 60}m`;
+    return (
+      <div>
+        {genres.map(genre => (
+          <div className={styles.item} key={uniqid()}>{genre.name}</div>
+        ))}
+        <div className={styles.item}>|</div>
+        <div className={styles.item}>{dur}</div>
+      </div>
+    );
+  }
 
   getRating = (rating) => {
     const stars = Math.ceil(rating);
     const array = Array.from({ length: stars }, x => x);
     return (
       <div className={styles.starBox}>
-        {array.map(x => (
-          <div className={styles.star} key={x} />
+        {array.map(() => (
+          <div className={styles.star} key={uniqid()} />
         ))}
       </div>
     );
@@ -28,28 +35,27 @@ export default class Info extends Component {
 
   render() {
     const {
-      movie: {
-        rating,
-        name,
-        genres,
-        duration,
-        description,
-      },
-    } = this.props;
+      vote_average: voteAverage,
+      title,
+      genres,
+      runtime,
+      overview,
+      backdrop_path: backdropPath,
+    } = mainMovie;
     return (
-      <div style={{ backgroundImage: `url(${backImg})` }} className={styles.wrapper}>
+      <div style={{ backgroundImage: `url(${baseUrl + backdropPath})` }} className={styles.wrapper}>
         <div className={styles.bottomShadow} />
         <div className={styles.infoBox}>
-          <div className={styles.movieName}>{name}</div>
-          <div className={styles.genresBox}>{this.getGenres(genres, duration)}</div>
+          <div className={styles.movieName}>{title}</div>
+          <div className={styles.genresBox}>{this.getGenres(genres, runtime)}</div>
           <div className={styles.ratingBox}>
-            {this.getRating(rating)}
-            <div className={styles.rating}>{rating}</div>
+            {this.getRating(voteAverage)}
+            <div className={styles.rating}>{voteAverage}</div>
           </div>
         </div>
         <div className={styles.descBox}>
           <div className={styles.description}>
-            <div className={styles.textWrapper}>{description}</div>
+            <div className={styles.textWrapper}>{overview}</div>
           </div>
           <button type="button" className={styles.watchNowButton}>Watch Now</button>
           <button type="button" className={styles.viewInfoButton}>View Info</button>
@@ -61,20 +67,20 @@ export default class Info extends Component {
 
 Info.propTypes = {
   movie: propTypes.shape({
-    rating: propTypes.number.isRequired,
-    name: propTypes.string.isRequired,
+    vote_average: propTypes.number.isRequired,
+    title: propTypes.string.isRequired,
     genres: propTypes.array.isRequired,
-    duration: propTypes.string.isRequired,
-    description: propTypes.string.isRequired,
+    runtime: propTypes.number.isRequired,
+    overview: propTypes.string.isRequired,
   }),
 };
 
 Info.defaultProps = {
   movie: {
-    name: 'error',
-    description: 'error',
-    rating: 0,
+    title: 'error',
+    overview: 'error',
+    vote_average: 0,
     genres: ['uncnown genre'],
-    duration: '0h 0m',
+    runtime: 0,
   },
 };

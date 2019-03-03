@@ -8,19 +8,18 @@
 
 .item {
   color: #0aaee4;
-  font-weight: 400;
   padding: 0;
   padding-bottom: 3px;
   margin-right: 20px;
   border: 0;
   outline: 0;
   background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
 }
 
 .active {
-  composes: item;
   border-bottom: 2px solid #0aaee4;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .stick {
@@ -66,6 +65,7 @@
   border: 0;
   outline: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .lines {
@@ -85,4 +85,35 @@
 
 .right {
   display: inline-block;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.genreList {
+  display: none;
+  position: absolute;
+  border: 1px solid #0aaee4;
+  border-radius: 5px;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  list-style: none;
+  padding: 5px;
+}
+
+.dropdown:hover .genreList {
+  display: block;
+}
+
+.listElement {
+  display: block;
+  border: 0;
+  color: #0aaee4;
+  font-size: 13px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  outline: 0;
+  cursor: pointer;
 }

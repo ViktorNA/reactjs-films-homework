@@ -104,7 +104,6 @@
 .descBox {
   grid-row: 3/4;
   z-index: 2;
-  height: 300px;
   justify-self: end;
   justify-items: right;
   align-items: end;
@@ -129,6 +128,7 @@
 }
 
 .watchNowButton {
+  cursor: pointer;
   font-size: 14px;
   color: white;
   border: 0;
@@ -140,6 +140,7 @@
 }
 
 .viewInfoButton {
+  cursor: pointer;
   font-size: 14px;
   color: white;
   border-radius: 3px;

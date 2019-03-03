@@ -1,3 +1,3 @@
-import App from './MovieDetailsPage';
+import MovieDetailsPage from './MovieDetailsPage';
 
-export default App;
+export default MovieDetailsPage;

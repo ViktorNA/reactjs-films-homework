@@ -1,13 +1,12 @@
 import React from 'react';
-import Info from '../../components/Info/index';
-import Menu from '../../components/Menu/index';
-import Movies from '../../components/Movies/index';
-import Footer from '../../components/Footer/index';
-import Header from '../../components/Header/index';
-import styles from './index.scss';
+import Info from '../../components/Info';
+import Menu from '../../components/Menu';
+import Movies from '../../components/Movies';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
-const App = () => (
-  <div className={styles.body}>
+const MovieDetailsPage = () => (
+  <div>
     <Header />
     <Info />
     <Menu />
@@ -15,4 +14,4 @@ const App = () => (
     <Footer />
   </div>);
 
-export default App;
+export default MovieDetailsPage;

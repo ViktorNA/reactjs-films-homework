@@ -1,7 +1,12 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import App from './pages/MovieDetailsPage/index';
+import MovieDetailsPage from './pages/MovieDetailsPage';
+import './index.scss';
+
+const App = () => (
+  <MovieDetailsPage />
+);
 
 render(
   <App />,

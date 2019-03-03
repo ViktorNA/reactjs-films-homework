@@ -3,14 +3,14 @@ import styles from './footer.scss';
 
 
 const Footer = () => (
-  <div>
+  <footer>
     <div className={styles.films}>
                     FILMS
     </div>
     <div className={styles.copyrate}>
                     COPYRATING 2019 SOME OTHER TEXT
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Snapshot test works correctly 1`] = `[Function]`;
+exports[`Snapshot test works correctly 1`] = `
+<footer>
+  <div
+    className="films"
+  >
+    FILMS
+  </div>
+  <div
+    className="copyrate"
+  >
+    COPYRATING 2019 SOME OTHER TEXT
+  </div>
+</footer>
+`;

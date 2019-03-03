@@ -5,6 +5,6 @@ import Movies from '../Movies';
 describe('Snapshot test', () => {
   it('works correctly', () => {
     const testRender = TestRenderer.create(<Movies />);
-    expect(testRender.toJSON).toMatchSnapshot();
+    expect(testRender.toJSON()).toMatchSnapshot();
   });
 });

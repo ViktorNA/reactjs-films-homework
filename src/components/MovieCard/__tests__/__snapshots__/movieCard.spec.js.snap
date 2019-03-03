@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test works correctly 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="imgWrapper"
+    style={
+      Object {
+        "backgroundImage": "url(https://image.tmdb.org/t/p/w500/undefined)",
+      }
+    }
+  />
+  <div
+    className="trailerBox"
+  >
+    <div
+      className="circle"
+    >
+      <div
+        className="triangle"
+      />
+    </div>
+    <div
+      className="label"
+    >
+      Watch Now
+    </div>
+    <button
+      className="viewInfoButton"
+      onClick={[Function]}
+      type="button"
+    >
+      View Info
+    </button>
+  </div>
+  <div
+    className="back"
+  >
+    <div
+      className="hidden"
+    >
+      <button
+        className="close"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="movieName"
+    >
+      error
+    </div>
+    <div
+      className="ratingBox"
+    >
+      0
+    </div>
+    <div
+      className="genresBox"
+    >
+      
+    </div>
+    <div
+      className="hidden"
+    >
+      error
+    </div>
+    <button
+      className="hidden"
+      type="button"
+    >
+      Watch Now
+    </button>
+  </div>
+</div>
+`;

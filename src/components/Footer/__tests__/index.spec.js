@@ -5,6 +5,6 @@ import Footer from '../index';
 describe('Snapshot test', () => {
   it('works correctly', () => {
     const testRender = TestRenderer.create(<Footer />);
-    expect(testRender.toJSON).toMatchSnapshot();
+    expect(testRender.toJSON()).toMatchSnapshot();
   });
 });

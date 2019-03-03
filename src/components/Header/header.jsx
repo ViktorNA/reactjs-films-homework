@@ -1,13 +1,15 @@
 import React from 'react';
 import styles from './header.scss';
 
+const placeholder = require('../../assets/json/505954.json').title;
+
 const Header = () => (
-  <div className={styles.topShadow}>
+  <header className={styles.topShadow}>
     <div className={styles.filmsLabel}>FILMS</div>
     <div className={styles.searchBox}>
-      <input className={styles.searchInput} placeholder="the jungle book" />
+      <input className={styles.searchInput} placeholder={placeholder} />
     </div>
-  </div>
+  </header>
 );
 
 export default Header;
