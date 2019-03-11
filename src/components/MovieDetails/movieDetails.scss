@@ -41,48 +41,6 @@
   margin-top: 6px;
 }
 
-.item {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.star {
-  position: relative;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.9em;
-  margin-right: 0.9em;
-  margin-bottom: 1.2em;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.7em  solid #0aaee4;
-  border-left: 0.3em solid transparent;
-  font-size: 10px;
-
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    top: 0.6em;
-    left: -1em;
-    border-right: 1em solid transparent;
-    border-bottom: 0.7em  solid #0aaee4;
-    border-left: 1em solid transparent;
-    transform: rotate(-35deg);
-  }
-
-  &::after {
-    transform: rotate(35deg);
-  }
-}
-
-.starBox {
-  display: inline-block;
-}
-
 .rating {
   position: absolute;
   display: inline-block;
@@ -125,29 +83,4 @@
   line-height: 1.6em;
   height: 100px;
   overflow: hidden;
-}
-
-.watchNowButton {
-  cursor: pointer;
-  font-size: 14px;
-  color: white;
-  border: 0;
-  border-radius: 3px;
-  background-color: #3bb4e0;
-  width: 100px;
-  height: 30px;
-  margin-right: 21px;
-}
-
-.viewInfoButton {
-  cursor: pointer;
-  font-size: 14px;
-  color: white;
-  border-radius: 3px;
-  border: 1px solid white;
-  width: 100px;
-  height: 28px;
-  background-color: rgba(255, 255, 255, 0);
-  align-content: center;
-  margin-right: 70px;
 }

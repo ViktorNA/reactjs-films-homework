@@ -98,13 +98,21 @@ exports[`Snapshot test works correctly 1`] = `
       </div>
     </div>
     <button
-      className="watchNowButton"
+      className="watchNow common"
+      onClick={[Function]}
+      style={Object {}}
       type="button"
     >
       Watch Now
     </button>
     <button
-      className="viewInfoButton"
+      className="viewInfo common"
+      onClick={[Function]}
+      style={
+        Object {
+          "marginLeft": "30px",
+        }
+      }
       type="button"
     >
       View Info

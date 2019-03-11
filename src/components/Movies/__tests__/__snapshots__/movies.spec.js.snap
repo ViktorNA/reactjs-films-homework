@@ -1,20 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot test works correctly 1`] = `
-<div>
+<div
+  className="wrapper"
+>
   <div
     className="item"
   >
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//AnLCqcH66Ecu8VFmXu3RofK4SMK.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//AnLCqcH66Ecu8VFmXu3RofK4SMK.jpg"
       />
       <div
         className="trailerBox"
@@ -32,8 +31,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -72,7 +72,9 @@ exports[`Snapshot test works correctly 1`] = `
           1941 - WWii. the second lieutenant Nikolai ivushkin, commander of a t-34, engages in an unequal battle against the tank ace Klaus Jager in a battle near moscow. His mission is more of a suicide - to destroy a dozen german tanks, all by himself. that said, luck does favour the bold. He wins the battle, barely survives, but loses his tank and lands himself in captivity for three long years... there was little to no chance for ivushkin and Jager to meet again, but the war knows how to throw a curve ball.in the spring of 1944, the Wehrmacht commands Jager to take charge of the ohrdruf  re range and turn it into a training center for elite german armored forces, using the latest t-34 as a running target. this is how Jager and ivushkin cross paths again. Jager o ers ivushkin to become the commander of a legendary tank and pick his crew from fellow camp prisoners. Nothing goes according to plan, though, when ivushkin uses exercises for a daring and carefully planned escape.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -82,13 +84,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//svIDTNUoajS8dLEo7EosxvyAsgJ.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//svIDTNUoajS8dLEo7EosxvyAsgJ.jpg"
       />
       <div
         className="trailerBox"
@@ -106,8 +105,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -146,7 +146,9 @@ exports[`Snapshot test works correctly 1`] = `
           In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -156,13 +158,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//AiRfixFcfTkNbn2A73qVJPlpkUo.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//AiRfixFcfTkNbn2A73qVJPlpkUo.jpg"
       />
       <div
         className="trailerBox"
@@ -180,8 +179,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -220,7 +220,9 @@ exports[`Snapshot test works correctly 1`] = `
           A war-hardened Crusader and his Moorish commander mount an audacious revolt against the corrupt English crown.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -230,13 +232,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg"
       />
       <div
         className="trailerBox"
@@ -254,8 +253,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -294,7 +294,9 @@ exports[`Snapshot test works correctly 1`] = `
           Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -304,13 +306,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//l76Rgp32z2UxjULApxGXAPpYdAP.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//l76Rgp32z2UxjULApxGXAPpYdAP.jpg"
       />
       <div
         className="trailerBox"
@@ -328,8 +327,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -368,7 +368,9 @@ exports[`Snapshot test works correctly 1`] = `
           France, World War II, June 1944. On the eve of D-Day, some American paratroopers fall behind enemy lines after their plane crashes during a mission consisting of destroying a German radio tower in Cielblanc, a small village near the beaches of Normandy. After reaching their target, the surviving paratroopers realize that, in addition to fighting Nazi troops that patrol the village, they also must fight against something else.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -378,13 +380,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//8yZAx7tlKRZIg7pJfaPhl00yHIQ.jpg"
       />
       <div
         className="trailerBox"
@@ -402,8 +401,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -442,7 +442,9 @@ exports[`Snapshot test works correctly 1`] = `
           Six strangers find themselves in circumstances beyond their control, and must use their wits to survive.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -452,13 +454,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg"
       />
       <div
         className="trailerBox"
@@ -476,8 +475,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -516,7 +516,9 @@ exports[`Snapshot test works correctly 1`] = `
           Once home to the most advanced civilization on Earth, the city of Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people -- and then the surface world. Standing in his way is Aquaman, Orm's half-human, half-Atlantean brother and true heir to the throne. With help from royal counselor Vulko, Aquaman must retrieve the legendary Trident of Atlan and embrace his destiny as protector of the deep.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -526,13 +528,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//uXJVpPXxZO4L8Rz3IG1Y8XvZJcg.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//uXJVpPXxZO4L8Rz3IG1Y8XvZJcg.jpg"
       />
       <div
         className="trailerBox"
@@ -550,8 +549,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -590,7 +590,9 @@ exports[`Snapshot test works correctly 1`] = `
           Set in a world many thousands of years in the future. Earth’s cities now roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive Traction Cities, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the Outlands who will change the course of his life forever.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -600,13 +602,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//v3QyboWRoA4O9RbcsqH8tJMe8EB.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//v3QyboWRoA4O9RbcsqH8tJMe8EB.jpg"
       />
       <div
         className="trailerBox"
@@ -624,8 +623,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -664,7 +664,9 @@ exports[`Snapshot test works correctly 1`] = `
           Follows Adonis Creed's life inside and outside of the ring as he deals with new found fame, issues with his family, and his continuing quest to become a champion.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -674,13 +676,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//ij0xoc13hGhrYIlXGGuPXWTh3vi.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//ij0xoc13hGhrYIlXGGuPXWTh3vi.jpg"
       />
       <div
         className="trailerBox"
@@ -698,8 +697,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -738,7 +738,9 @@ exports[`Snapshot test works correctly 1`] = `
           As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away.  When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -748,13 +750,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//wrFpXMNBRj2PBiN4Z5kix51XaIZ.jpg"
       />
       <div
         className="trailerBox"
@@ -772,8 +771,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -812,7 +812,9 @@ exports[`Snapshot test works correctly 1`] = `
           Seasoned musician Jackson Maine discovers — and falls in love with — struggling artist Ally. She has just about given up on her dream to make it big as a singer — until Jack coaxes her into the spotlight. But even as Ally's career takes off, the personal side of their relationship is breaking down, as Jack fights an ongoing battle with his own internal demons.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -822,13 +824,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//t0idiLMalKMj2pLsvqHrOM4LPdQ.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//t0idiLMalKMj2pLsvqHrOM4LPdQ.jpg"
       />
       <div
         className="trailerBox"
@@ -846,8 +845,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -886,7 +886,9 @@ exports[`Snapshot test works correctly 1`] = `
           A 90 year old horticulturalist and Korean War veteran is caught transporting $3 million worth of cocaine through Illinois for a Mexican drug cartel.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -896,13 +898,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//7WsyChQLEftFiDOVTGkv3hFpyyt.jpg"
       />
       <div
         className="trailerBox"
@@ -920,8 +919,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -960,7 +960,9 @@ exports[`Snapshot test works correctly 1`] = `
           As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -970,13 +972,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg"
       />
       <div
         className="trailerBox"
@@ -994,8 +993,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1034,7 +1034,9 @@ exports[`Snapshot test works correctly 1`] = `
           On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1044,13 +1046,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//f27RTnWEc2bhVtfSlKmxxypznfR.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//f27RTnWEc2bhVtfSlKmxxypznfR.jpg"
       />
       <div
         className="trailerBox"
@@ -1068,8 +1067,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1108,7 +1108,9 @@ exports[`Snapshot test works correctly 1`] = `
           A police shootout leaves four thieves dead during an explosive armed robbery attempt in Chicago. Their widows have nothing in common except a debt left behind by their spouses' criminal activities. Hoping to forge a future on their own terms, they join forces to pull off a heist.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1118,13 +1120,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//hgWAcic93phg4DOuQ8NrsgQWiqu.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//hgWAcic93phg4DOuQ8NrsgQWiqu.jpg"
       />
       <div
         className="trailerBox"
@@ -1142,8 +1141,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1182,7 +1182,9 @@ exports[`Snapshot test works correctly 1`] = `
           Baker Dill is a fishing boat captain leading tours off a tranquil, tropical enclave called Plymouth Island. His quiet life is shattered, however, when his ex-wife Karen tracks him down with a desperate plea for help.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1192,13 +1194,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg"
       />
       <div
         className="trailerBox"
@@ -1216,8 +1215,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1256,7 +1256,9 @@ exports[`Snapshot test works correctly 1`] = `
           Investigative journalist Eddie Brock attempts a comeback following a scandal, but accidentally becomes the host of Venom, a violent, super powerful alien symbiote. Soon, he must rely on his newfound powers to protect the world from a shadowy organization looking for a symbiote of their own.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1266,13 +1268,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//hPuZR2bFoV0kuBrA98exWyvTf40.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//hPuZR2bFoV0kuBrA98exWyvTf40.jpg"
       />
       <div
         className="trailerBox"
@@ -1290,8 +1289,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1330,7 +1330,9 @@ exports[`Snapshot test works correctly 1`] = `
           When bestselling celebrity biographer Lee Israel is no longer able to get published because she has fallen out of step with current tastes, she turns her art form to deception, abetted by her loyal friend Jack.  It is a story of two difficult, socially inept, people somehow becoming partners-in-crime in forgeries: one creating and the other selling it.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1340,13 +1342,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//t0jwlwFUrtkPJoq5JH9YrRVROXZ.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//t0jwlwFUrtkPJoq5JH9YrRVROXZ.jpg"
       />
       <div
         className="trailerBox"
@@ -1364,8 +1363,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1404,7 +1404,9 @@ exports[`Snapshot test works correctly 1`] = `
           Theatrical-release adaptation of the visual novel "Fate/stay night", following the third and final route. (Part 2 of a trilogy.)
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now
@@ -1414,13 +1416,10 @@ exports[`Snapshot test works correctly 1`] = `
     <div
       className="card"
     >
-      <div
+      <img
+        alt="movie logo"
         className="imgWrapper"
-        style={
-          Object {
-            "backgroundImage": "url(https://image.tmdb.org/t/p/w500//nJVPgIq3icZMQ26p5uWIFdUZJfL.jpg)",
-          }
-        }
+        src="https://image.tmdb.org/t/p/w500//nJVPgIq3icZMQ26p5uWIFdUZJfL.jpg"
       />
       <div
         className="trailerBox"
@@ -1438,8 +1437,9 @@ exports[`Snapshot test works correctly 1`] = `
           Watch Now
         </div>
         <button
-          className="viewInfoButton"
+          className="viewInfo common"
           onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           View Info
@@ -1478,7 +1478,9 @@ exports[`Snapshot test works correctly 1`] = `
           19-year old Belle practices playing the violin diligently, but is unable to impart her music with a sensitive undertone. Her life changes when she discovers that sexual desire stimulates passion in her music.
         </div>
         <button
-          className="hidden"
+          className="hidden common"
+          onClick={[Function]}
+          style={Object {}}
           type="button"
         >
           Watch Now

@@ -1,43 +1,27 @@
 import React, { Component } from 'react';
 import styles from './menu.scss';
 
+const cn = require('classnames');
 const genreList = require('../../assets/json/genres.json').genres;
 
 export default class Menu extends Component {
   state = {
     active: 'tranding',
-    activeGenreIds: [],
   };
 
   getStyle(name) {
     const { active } = this.state;
-    return active === name ? `${styles.item} ${styles.active}` : styles.item;
+    return cn(styles.item, { [styles.active]: name === active });
   }
 
   setActive = (event) => {
     this.setState({ active: event.target.name });
   }
 
-  selectGenre = (event) => {
-    const { activeGenreIds } = this.state;
-    if (activeGenreIds.indexOf(+event.target.id) === -1) {
-      activeGenreIds.push(+event.target.id);
-    } else {
-      activeGenreIds.splice(activeGenreIds.indexOf(event.target.id, 1));
-    }
-    this.setState({ activeGenreIds });
-    return 0;
-  }
-
-  getGenreStyle = (id) => {
-    const { activeGenreIds } = this.state;
-    return activeGenreIds.indexOf(id) === -1 ? styles.listElement : `${styles.listElement} ${styles.active}`;
-  }
-
-  getGenreList = () => genreList.map(genre => (
-    <button className={this.getGenreStyle(genre.id)} type="button" key={genre.id} id={genre.id} onClick={this.selectGenre}>
+  renderGenreList = () => genreList.map(genre => (
+    <option key={genre.id} id={genre.id}>
       {genre.name}
-    </button>
+    </option>
   ));
 
   render() {
@@ -54,16 +38,14 @@ export default class Menu extends Component {
             Coming Soon
           </button>
           <div className={styles.dropdown}>
-            <button type="button" name="genre" className={this.getStyle('genre')} onClick={this.setActive}>
-              Genre
-              <div className={styles.stickBox}>
-                <div className={styles.leftStick} />
-                <div className={styles.rightStick} />
-              </div>
-            </button>
-            <ul className={styles.genreList}>
-              {this.getGenreList()}
-            </ul>
+            <select className={this.getStyle('genre')} name="genre" onClick={this.setActive}>
+              <option>Genre</option>
+              {this.renderGenreList()}
+            </select>
+            <div className={styles.stickBox}>
+              <div className={styles.leftStick} />
+              <div className={styles.rightStick} />
+            </div>
           </div>
         </div>
 

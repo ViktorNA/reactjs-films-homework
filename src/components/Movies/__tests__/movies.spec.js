@@ -8,3 +8,12 @@ describe('Snapshot test', () => {
     expect(testRender.toJSON()).toMatchSnapshot();
   });
 });
+
+describe('Updater test', () => {
+  it('works correctly', () => {
+    const testRender = TestRenderer.create(<Movies />);
+    const testInstance = testRender.getInstance();
+    testInstance.updateData(12);
+    expect(testInstance.state.activeId).toEqual(12);
+  });
+});

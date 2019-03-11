@@ -13,8 +13,7 @@
   position: absolute;
   width: inherit;
   height: inherit;
-  background-size: cover;
-  background-position: center;
+  object-fit: cover;
 }
 
 .back {
@@ -111,20 +110,6 @@
   margin-top: 10px;
 }
 
-.viewInfoButton {
-  grid-column: 2/3;
-  font-size: 14px;
-  color: white;
-  border-radius: 3px;
-  border: 1px solid white;
-  width: 100px;
-  height: 28px;
-  background-color: rgba(255, 255, 255, 0);
-  align-content: center;
-  margin-bottom: 60px;
-  cursor: pointer;
-}
-
 .description {
   color: white;
   background-color: rgba(0, 0, 0, 0.64);
@@ -175,16 +160,4 @@
   display: block;
   position: relative;
   margin-bottom: 25px;
-}
-
-.watchNowButton {
-  font-size: 14px;
-  color: white;
-  border: 0;
-  border-radius: 3px;
-  background-color: #3bb4e0;
-  width: 100px;
-  height: 30px;
-  margin-top: 23px;
-  cursor: pointer;
 }

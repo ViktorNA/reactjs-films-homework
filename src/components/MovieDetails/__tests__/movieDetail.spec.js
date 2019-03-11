@@ -1,10 +1,10 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Page from '../index';
+import MovieDetails from '../MovieDetails';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {
-    const testRender = TestRenderer.create(<Page />);
+    const testRender = TestRenderer.create(<MovieDetails />);
     expect(testRender.toJSON()).toMatchSnapshot();
   });
 });

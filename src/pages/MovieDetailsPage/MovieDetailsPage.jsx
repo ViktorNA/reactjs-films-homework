@@ -1,5 +1,5 @@
 import React from 'react';
-import Info from '../../components/Info';
+import MovieDetails from '../../components/MovieDetails';
 import Menu from '../../components/Menu';
 import Movies from '../../components/Movies';
 import Footer from '../../components/Footer';
@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 const MovieDetailsPage = () => (
   <div>
     <Header />
-    <Info />
+    <MovieDetails />
     <Menu />
     <Movies />
     <Footer />

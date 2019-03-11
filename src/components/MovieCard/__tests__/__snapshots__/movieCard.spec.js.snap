@@ -4,13 +4,10 @@ exports[`Snapshot test works correctly 1`] = `
 <div
   className="card"
 >
-  <div
+  <img
+    alt="movie logo"
     className="imgWrapper"
-    style={
-      Object {
-        "backgroundImage": "url(https://image.tmdb.org/t/p/w500/undefined)",
-      }
-    }
+    src="https://image.tmdb.org/t/p/w500/undefined"
   />
   <div
     className="trailerBox"
@@ -28,18 +25,19 @@ exports[`Snapshot test works correctly 1`] = `
       Watch Now
     </div>
     <button
-      className="viewInfoButton"
+      className="viewInfo common"
       onClick={[Function]}
+      style={Object {}}
       type="button"
     >
       View Info
     </button>
   </div>
   <div
-    className="back"
+    className="back description"
   >
     <div
-      className="hidden"
+      className="closeWrapper"
     >
       <button
         className="close"
@@ -63,12 +61,14 @@ exports[`Snapshot test works correctly 1`] = `
       
     </div>
     <div
-      className="hidden"
+      className="descriptionWrapper"
     >
       error
     </div>
     <button
-      className="hidden"
+      className="watchNow common"
+      onClick={[Function]}
+      style={Object {}}
       type="button"
     >
       Watch Now

@@ -7,6 +7,7 @@
 }
 
 .item {
+  font-size: 14px;
   color: #0aaee4;
   padding: 0;
   padding-bottom: 3px;
@@ -15,11 +16,6 @@
   outline: 0;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
-}
-
-.active {
-  border-bottom: 2px solid #0aaee4;
-  font-weight: bold;
 }
 
 .stick {
@@ -43,6 +39,9 @@
 
 .stickBox {
   display: inline;
+  position: absolute;
+  margin-left: -35px;
+  background-color: #f5f6f6;
 }
 
 .blocks {
@@ -91,29 +90,19 @@
   display: inline-block;
 }
 
-.genreList {
-  display: none;
-  position: absolute;
-  border: 1px solid #0aaee4;
-  border-radius: 5px;
-  z-index: 4;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 0;
-  list-style: none;
-  padding: 5px;
-}
-
-.dropdown:hover .genreList {
-  display: block;
-}
-
-.listElement {
-  display: block;
-  border: 0;
+select {
   color: #0aaee4;
-  font-size: 13px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
   background-color: rgba(255, 255, 255, 0);
-  outline: 0;
   cursor: pointer;
+  outline: 0;
+}
+
+.active {
+  border-bottom: 2px solid #0aaee4;
+  font-weight: bold;
 }

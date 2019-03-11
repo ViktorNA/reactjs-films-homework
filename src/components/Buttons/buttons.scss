@@ -1,0 +1,24 @@
+.common {
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+}
+
+.watchNow {
+  border: 0;
+  background-color: #3bb4e0;
+}
+
+.viewInfo {
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  align-content: center;
+  grid-column: 2/3;
+}
+
+.hidden {
+  display: none;
+}

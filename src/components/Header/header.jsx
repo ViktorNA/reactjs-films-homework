@@ -4,8 +4,8 @@ import styles from './header.scss';
 const placeholder = require('../../assets/json/505954.json').title;
 
 const Header = () => (
-  <header className={styles.topShadow}>
-    <div className={styles.filmsLabel}>FILMS</div>
+  <header className={styles.header}>
+    <div className={styles.logo}>FILMS</div>
     <div className={styles.searchBox}>
       <input className={styles.searchInput} placeholder={placeholder} />
     </div>
