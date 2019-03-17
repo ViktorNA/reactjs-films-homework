@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test works correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="logo"
+  >
+    FILMS
+  </div>
+  <div
+    className="searchBox"
+  >
+    <input
+      className="searchInput"
+      placeholder="T-34"
+    />
+  </div>
+</header>
+`;

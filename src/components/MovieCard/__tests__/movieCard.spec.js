@@ -21,14 +21,22 @@ describe('genres to string', () => {
 describe('changeMode', () => {
   it('reset mode', () => {
     const onShowInfo = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={onShowInfo} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={12}
+      onShowInfo={onShowInfo}
+    />);
     const testInstance = testRender.getInstance();
     testInstance.showInfo();
     expect(onShowInfo).toHaveBeenCalledWith(null);
   });
   it('set mode', () => {
     const onShowInfo = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} onShowInfo={onShowInfo} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={1}
+      onShowInfo={onShowInfo}
+    />);
     const testInstance = testRender.getInstance();
     testInstance.showInfo();
     expect(onShowInfo).toHaveBeenCalledWith(12);
@@ -38,7 +46,11 @@ describe('changeMode', () => {
 describe('closeDesc', () => {
   it('reset mode', () => {
     const onShowInfo = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={onShowInfo} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={12}
+      onShowInfo={onShowInfo}
+    />);
     const testInstance = testRender.getInstance();
     testInstance.closeDescription();
     expect(onShowInfo).toHaveBeenCalledWith(null);
@@ -47,13 +59,21 @@ describe('closeDesc', () => {
 
 describe('getClassName', () => {
   it('reset mode', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={12}
+      onShowInfo={() => { }}
+    />);
     const testInstance = testRender.getInstance();
     const res = testInstance.getClassName('className');
     expect(res).toBe('className');
   });
   it('set mode', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={1}
+      onShowInfo={() => { }}
+    />);
     const testInstance = testRender.getInstance();
     const res = testInstance.getClassName('className');
     expect(res).toBe('hidden');
@@ -62,13 +82,21 @@ describe('getClassName', () => {
 
 describe('getBackStyle', () => {
   it('desc', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={12}
+      onShowInfo={() => { }}
+    />);
     const testInstance = testRender.getInstance();
     const res = testInstance.getBackStyle();
     expect(res).toBe('back description');
   });
   it('short', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} />);
+    const testRender = TestRenderer.create(<MovieCard
+      id={12}
+      activeId={1}
+      onShowInfo={() => { }}
+    />);
     const testInstance = testRender.getInstance();
     const res = testInstance.getBackStyle();
     expect(res).toBe('back');
