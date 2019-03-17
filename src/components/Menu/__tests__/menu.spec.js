@@ -1,6 +1,6 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Menu from '../Menu';
+import Menu from '..';
 
 describe('channgeState', () => {
   it('works correctly', () => {

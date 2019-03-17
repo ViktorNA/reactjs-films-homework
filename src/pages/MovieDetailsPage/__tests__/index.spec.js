@@ -1,6 +1,6 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Page from '../index';
+import Page from '..';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {

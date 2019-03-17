@@ -24,7 +24,7 @@ export default class Movies extends Component {
               key={movie.id}
               id={movie.id}
               activeId={activeId}
-              updater={this.updateData}
+              onShowInfo={this.updateData}
             />
           ))}
         </div>

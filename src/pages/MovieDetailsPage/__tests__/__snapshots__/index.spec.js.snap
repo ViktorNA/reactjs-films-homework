@@ -116,21 +116,15 @@ exports[`Snapshot test works correctly 1`] = `
         </div>
       </div>
       <button
-        className="watchNow common"
+        className="primary common"
         onClick={[Function]}
-        style={Object {}}
         type="button"
       >
         Watch Now
       </button>
       <button
-        className="viewInfo common"
+        className="ghost common movieDetailsAlign"
         onClick={[Function]}
-        style={
-          Object {
-            "marginLeft": "30px",
-          }
-        }
         type="button"
       >
         View Info
@@ -358,9 +352,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -401,7 +394,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -432,9 +424,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -475,7 +466,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -506,9 +496,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -549,7 +538,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -580,9 +568,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -623,7 +610,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -654,9 +640,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -697,7 +682,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -728,9 +712,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -771,7 +754,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -802,9 +784,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -845,7 +826,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -876,9 +856,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -919,7 +898,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -950,9 +928,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -993,7 +970,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1024,9 +1000,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1067,7 +1042,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1098,9 +1072,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1141,7 +1114,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1172,9 +1144,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1215,7 +1186,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1246,9 +1216,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1289,7 +1258,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1320,9 +1288,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1363,7 +1330,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1394,9 +1360,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1437,7 +1402,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1468,9 +1432,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1511,7 +1474,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1542,9 +1504,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1585,7 +1546,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1616,9 +1576,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1659,7 +1618,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1690,9 +1648,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1733,7 +1690,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1764,9 +1720,8 @@ exports[`Snapshot test works correctly 1`] = `
             Watch Now
           </div>
           <button
-            className="viewInfo common"
+            className="ghost common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             View Info
@@ -1807,7 +1762,6 @@ exports[`Snapshot test works correctly 1`] = `
           <button
             className="hidden common"
             onClick={[Function]}
-            style={Object {}}
             type="button"
           >
             Watch Now
@@ -1833,15 +1787,17 @@ exports[`Snapshot test works correctly 1`] = `
       LOADING
     </div>
   </div>
-  <div
-    className="logo"
-  >
-    FILMS
-  </div>
-  <div
-    className="copyright"
-  >
-    COPYRATING 2019 SOME OTHER TEXT
-  </div>
+  <footer>
+    <div
+      className="logo"
+    >
+      FILMS
+    </div>
+    <div
+      className="copyright"
+    >
+      COPYRATING 2019 SOME OTHER TEXT
+    </div>
+  </footer>
 </div>
 `;

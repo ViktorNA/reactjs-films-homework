@@ -2,8 +2,8 @@
 
 exports[`Snapshot test viewInfo works correctly 1`] = `
 <button
-  className="viewInfo common"
-  style={Object {}}
+  className="primary common"
+  onClick={[Function]}
   type="button"
 >
   Watch Now
@@ -12,8 +12,8 @@ exports[`Snapshot test viewInfo works correctly 1`] = `
 
 exports[`Snapshot test watchNow works correctly 1`] = `
 <button
-  className="watchNow common"
-  style={Object {}}
+  className="primary common"
+  onClick={[Function]}
   type="button"
 >
   Watch Now

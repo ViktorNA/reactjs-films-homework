@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import React, { Component } from 'react';
-import Button from '../Buttons';
+import Button from '../Button';
 import styles from './MovieCard.scss';
 
 const cn = require('classnames');
@@ -11,12 +11,17 @@ const baseUrl = 'https://image.tmdb.org/t/p/w500/';
 export default class MovieCard extends Component {
   renderGenreList = (genres = []) => genres.map(id => genreIds.find(el => el.id === id).name).slice(0, 3).join(', ');
 
-  changeMode = () => {
-    const { updater, id, activeId } = this.props;
-    updater(id === activeId ? -1 : id);
+  showInfo = () => {
+    const { onShowInfo, id, activeId } = this.props;
+    onShowInfo(id === activeId ? null : id);
   }
 
-  checkVisability = (className) => {
+  closeDescription = () => {
+    const { onShowInfo } = this.props;
+    onShowInfo(null);
+  }
+
+  getClassName = (className) => {
     const { id, activeId } = this.props;
     return id === activeId ? className : styles.hidden;
   }
@@ -46,17 +51,21 @@ export default class MovieCard extends Component {
             <div className={styles.triangle} />
           </div>
           <div className={styles.label}>Watch Now</div>
-          <Button type="viewInfo" text="View Info" action={this.changeMode} />
+          <Button type="ghost" action={this.showInfo}>View Info</Button>
         </div>
         <div className={this.getBackStyle()}>
-          <div className={this.checkVisability(styles.closeWrapper)}>
-            <button type="button" className={styles.close} onClick={this.changeMode} />
+          <div className={this.getClassName(styles.closeWrapper)}>
+            <button type="button" className={styles.close} onClick={this.closeDescription} />
           </div>
           <div className={styles.movieName}>{title}</div>
           <div className={styles.ratingBox}>{rating}</div>
           <div className={styles.genresBox}>{this.renderGenreList(genres)}</div>
-          <div className={this.checkVisability(styles.descriptionWrapper)}>{overview}</div>
-          <Button type={cn({ watchNow: id === activeId }, { hidden: id !== activeId })} text="Watch Now" action={() => {}} />
+          <div className={this.getClassName(styles.descriptionWrapper)}>{overview}</div>
+          <Button
+            type={cn({ primary: id === activeId }, { hidden: id !== activeId })}
+          >
+            Watch Now
+          </Button>
         </div>
       </div>
     );
@@ -73,7 +82,7 @@ MovieCard.propTypes = {
   }),
   id: propTypes.number.isRequired,
   activeId: propTypes.number.isRequired,
-  updater: propTypes.func.isRequired,
+  onShowInfo: propTypes.func.isRequired,
 };
 
 MovieCard.defaultProps = {

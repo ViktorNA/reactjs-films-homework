@@ -25,9 +25,8 @@ exports[`Snapshot test works correctly 1`] = `
       Watch Now
     </div>
     <button
-      className="viewInfo common"
+      className="ghost common"
       onClick={[Function]}
-      style={Object {}}
       type="button"
     >
       View Info
@@ -66,9 +65,8 @@ exports[`Snapshot test works correctly 1`] = `
       error
     </div>
     <button
-      className="watchNow common"
+      className="primary common"
       onClick={[Function]}
-      style={Object {}}
       type="button"
     >
       Watch Now

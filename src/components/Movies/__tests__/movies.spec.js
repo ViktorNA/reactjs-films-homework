@@ -1,6 +1,6 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Movies from '../Movies';
+import Movies from '..';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {

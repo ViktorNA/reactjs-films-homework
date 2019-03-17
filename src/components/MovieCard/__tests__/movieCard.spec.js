@@ -1,6 +1,6 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import MovieCard from '../MovieCard';
+import MovieCard from '..';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {
@@ -20,32 +20,42 @@ describe('genres to string', () => {
 
 describe('changeMode', () => {
   it('reset mode', () => {
-    const updater = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} updater={updater} />);
+    const onShowInfo = jest.fn();
+    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={onShowInfo} />);
     const testInstance = testRender.getInstance();
-    testInstance.changeMode();
-    expect(updater).toHaveBeenCalledWith(-1);
+    testInstance.showInfo();
+    expect(onShowInfo).toHaveBeenCalledWith(null);
   });
   it('set mode', () => {
-    const updater = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} updater={updater} />);
+    const onShowInfo = jest.fn();
+    const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} onShowInfo={onShowInfo} />);
     const testInstance = testRender.getInstance();
-    testInstance.changeMode();
-    expect(updater).toHaveBeenCalledWith(12);
+    testInstance.showInfo();
+    expect(onShowInfo).toHaveBeenCalledWith(12);
   });
 });
 
-describe('checkVisability', () => {
+describe('closeDesc', () => {
+  it('reset mode', () => {
+    const onShowInfo = jest.fn();
+    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={onShowInfo} />);
+    const testInstance = testRender.getInstance();
+    testInstance.closeDescription();
+    expect(onShowInfo).toHaveBeenCalledWith(null);
+  });
+});
+
+describe('getClassName', () => {
   it('reset mode', () => {
     const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} />);
     const testInstance = testRender.getInstance();
-    const res = testInstance.checkVisability('className');
+    const res = testInstance.getClassName('className');
     expect(res).toBe('className');
   });
   it('set mode', () => {
     const testRender = TestRenderer.create(<MovieCard id={12} activeId={1} />);
     const testInstance = testRender.getInstance();
-    const res = testInstance.checkVisability('className');
+    const res = testInstance.getClassName('className');
     expect(res).toBe('hidden');
   });
 });

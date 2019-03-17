@@ -1,15 +1,15 @@
 import propTypes from 'prop-types';
 import React from 'react';
-import Button from '../Buttons';
+import Button from '../Button';
 import styles from './movieDetails.scss';
-import Rating from './Rating';
-import Genres from './Genres';
+import Rating from './components/Rating';
+import Genres from './components/Genres';
 
 const baseUrl = 'https://image.tmdb.org/t/p/original/';
 
 const mainMovie = require('../../assets/json/505954.json');
 
-const Info = () => {
+const MovieDetails = () => {
   const {
     vote_average: voteAverage,
     title,
@@ -33,16 +33,16 @@ const Info = () => {
         <div className={styles.description}>
           <div className={styles.textWrapper}>{overview}</div>
         </div>
-        <Button type="watchNow" action={() => {}} text="Watch Now" />
-        <Button type="viewInfo" action={() => { }} text="View Info" additionStyle={{ marginLeft: '30px' }} />
+        <Button type="primary">Watch Now</Button>
+        <Button type="ghost" text="View Info" className="movieDetailsAlign">View Info</Button>
       </div>
     </div>
   );
 };
 
-export default Info;
+export default MovieDetails;
 
-Info.propTypes = {
+MovieDetails.propTypes = {
   movie: propTypes.shape({
     vote_average: propTypes.number.isRequired,
     title: propTypes.string.isRequired,
@@ -52,7 +52,7 @@ Info.propTypes = {
   }),
 };
 
-Info.defaultProps = {
+MovieDetails.defaultProps = {
   movie: {
     title: 'error',
     overview: 'error',

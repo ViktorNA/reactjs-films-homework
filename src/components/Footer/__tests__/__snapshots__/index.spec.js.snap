@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshot test works correctly 1`] = `
-Array [
+<footer>
   <div
     className="logo"
   >
     FILMS
-  </div>,
+  </div>
   <div
     className="copyright"
   >
     COPYRATING 2019 SOME OTHER TEXT
-  </div>,
-]
+  </div>
+</footer>
 `;

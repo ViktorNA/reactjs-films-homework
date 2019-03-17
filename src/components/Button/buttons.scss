@@ -7,16 +7,20 @@
   height: 30px;
 }
 
-.watchNow {
+.primary {
   border: 0;
   background-color: #3bb4e0;
 }
 
-.viewInfo {
+.ghost {
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0);
   align-content: center;
   grid-column: 2/3;
+}
+
+.movieDetailsAlign {
+  margin-left: 30px;
 }
 
 .hidden {

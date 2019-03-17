@@ -1,14 +1,14 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Buttons from '../index';
+import Button from '..';
 
 describe('Snapshot test', () => {
   it('watchNow works correctly', () => {
-    const testRender = TestRenderer.create(<Buttons type="watchNow" />);
+    const testRender = TestRenderer.create(<Button />);
     expect(testRender.toJSON()).toMatchSnapshot();
   });
   it('viewInfo works correctly', () => {
-    const testRender = TestRenderer.create(<Buttons type="viewInfo" />);
+    const testRender = TestRenderer.create(<Button />);
     expect(testRender.toJSON()).toMatchSnapshot();
   });
 });

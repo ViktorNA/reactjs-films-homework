@@ -1,6 +1,6 @@
 import TestRenderer from 'react-test-renderer';
 import React from 'react';
-import Footer from '../index';
+import Footer from '..';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {
