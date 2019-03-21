@@ -123,7 +123,7 @@ exports[`Snapshot test works correctly 1`] = `
         Watch Now
       </button>
       <button
-        className="ghost common movieDetailsAlign"
+        className="ghost common buttonAlign"
         onClick={[Function]}
         type="button"
       >

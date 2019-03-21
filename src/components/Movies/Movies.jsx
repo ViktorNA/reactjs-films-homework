@@ -34,6 +34,7 @@ export default class Movies extends Component {
         <div className={styles.loading}>
           LOADING
         </div>
-      </div>);
+      </div>
+    );
   }
 }

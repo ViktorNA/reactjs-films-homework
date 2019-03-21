@@ -4,14 +4,14 @@ import MovieCard from '..';
 
 describe('Snapshot test', () => {
   it('works correctly', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} updater={() => { }} />);
+    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={() => { }} />);
     expect(testRender.toJSON()).toMatchSnapshot();
   });
 });
 
 describe('genres to string', () => {
   it('works correctly', () => {
-    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} updater={() => { }} />);
+    const testRender = TestRenderer.create(<MovieCard id={12} activeId={12} onShowInfo={() => { }} />);
     const testInstance = testRender.getInstance();
     const res = testInstance.renderGenreList([12]);
     expect(res).toEqual('Adventure');
@@ -19,17 +19,6 @@ describe('genres to string', () => {
 });
 
 describe('changeMode', () => {
-  it('reset mode', () => {
-    const onShowInfo = jest.fn();
-    const testRender = TestRenderer.create(<MovieCard
-      id={12}
-      activeId={12}
-      onShowInfo={onShowInfo}
-    />);
-    const testInstance = testRender.getInstance();
-    testInstance.showInfo();
-    expect(onShowInfo).toHaveBeenCalledWith(null);
-  });
   it('set mode', () => {
     const onShowInfo = jest.fn();
     const testRender = TestRenderer.create(<MovieCard

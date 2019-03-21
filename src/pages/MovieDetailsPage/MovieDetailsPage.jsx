@@ -12,6 +12,7 @@ const MovieDetailsPage = () => (
     <Menu />
     <Movies />
     <Footer />
-  </div>);
+  </div>
+);
 
 export default MovieDetailsPage;

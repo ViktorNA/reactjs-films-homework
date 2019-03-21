@@ -12,8 +12,8 @@ export default class MovieCard extends Component {
   renderGenreList = (genres = []) => genres.map(id => genreIds.find(el => el.id === id).name).slice(0, 3).join(', ');
 
   showInfo = () => {
-    const { onShowInfo, id, activeId } = this.props;
-    onShowInfo(id === activeId ? null : id);
+    const { onShowInfo, id } = this.props;
+    onShowInfo(id);
   }
 
   closeDescription = () => {
@@ -81,7 +81,7 @@ MovieCard.propTypes = {
     genres: propTypes.array,
   }),
   id: propTypes.number.isRequired,
-  activeId: propTypes.number.isRequired,
+  activeId: propTypes.number,
   onShowInfo: propTypes.func.isRequired,
 };
 
@@ -92,4 +92,5 @@ MovieCard.defaultProps = {
     vote_average: 0,
     genres: ['uncnown genre'],
   },
+  activeId: -1,
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import cn from 'classnames';
-import styles from './buttons.scss';
+import styles from './button.scss';
 
 const Button = (props) => {
   const {
@@ -10,7 +10,7 @@ const Button = (props) => {
     action,
     className,
   } = props;
-  const classes = cn(styles[type], styles.common, styles[className]);
+  const classes = cn(styles[type], styles.common, className);
   return <button type="button" className={classes} onClick={action}>{children}</button>;
 };
 

@@ -34,7 +34,7 @@ const MovieDetails = () => {
           <div className={styles.textWrapper}>{overview}</div>
         </div>
         <Button type="primary">Watch Now</Button>
-        <Button type="ghost" text="View Info" className="movieDetailsAlign">View Info</Button>
+        <Button type="ghost" text="View Info" className={styles.buttonAlign}>View Info</Button>
       </div>
     </div>
   );
