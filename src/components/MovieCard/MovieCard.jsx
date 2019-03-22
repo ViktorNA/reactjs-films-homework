@@ -31,6 +31,11 @@ export default class MovieCard extends Component {
     return cn(styles.back, { [styles.description]: id === activeId });
   }
 
+  getWatchNowStyle = () => {
+    const { id, activeId } = this.props;
+    return id === activeId ? 'primary' : 'hidden';
+  }
+
   render() {
     const {
       movie: {
@@ -39,8 +44,6 @@ export default class MovieCard extends Component {
         poster_path: imageUrl,
         vote_average: rating,
         genre_ids: genres,
-        id,
-        activeId,
       },
     } = this.props;
     return (
@@ -60,9 +63,12 @@ export default class MovieCard extends Component {
           <div className={styles.movieName}>{title}</div>
           <div className={styles.ratingBox}>{rating}</div>
           <div className={styles.genresBox}>{this.renderGenreList(genres)}</div>
-          <div className={this.getClassName(styles.descriptionWrapper)}>{overview}</div>
+
+          <div className={this.getClassName(styles.descriptionWrapper)}>
+            {overview}
+          </div>
           <Button
-            type={cn({ primary: id === activeId }, { hidden: id !== activeId })}
+            type={this.getWatchNowStyle()}
           >
             Watch Now
           </Button>
