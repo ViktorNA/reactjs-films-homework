@@ -1,11 +1,15 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import Signature from './components/Signature/Signature';
+import MovieDetailsPage from './pages/MovieDetailsPage';
+import './index.scss';
 
+const App = () => (
+  <MovieDetailsPage />
+);
 
 render(
-  <Signature name="Viktor" />,
+  <App />,
   document.getElementById('root'),
 );
 

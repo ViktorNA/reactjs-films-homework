@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url('./assets/fonts/HelveticaNeue.eot');
+  src:
+    url('./assets/fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/HelveticaNeue.woff') format('woff'),
+    url('./assets/fonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url('./assets/fonts/HelveticaNeueBold.eot');
+  src:
+    url('./assets/fonts/HelveticaNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/HelveticaNeueBold.woff') format('woff'),
+    url('./assets/fonts/HelveticaNeueBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+body {
+  font-family: HelveticaNeue, Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: #f5f6f6;
+}

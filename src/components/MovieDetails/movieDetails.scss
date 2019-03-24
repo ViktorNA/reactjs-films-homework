@@ -1,0 +1,90 @@
+.wrapper {
+  display: grid;
+  grid-template: 100px 1fr 200px/1fr 1fr;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 38px;
+}
+
+.image {
+  width: inherit;
+}
+
+.bottomShadow {
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.infoBox {
+  z-index: 2;
+  grid-row: 3/4;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+.movieName {
+  color: #fff;
+  font-size: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.genresBox {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.rating {
+  position: absolute;
+  display: inline-block;
+  margin-left: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  border: 2px solid #0aaee4;
+  width: 28px;
+  height: 16px;
+}
+
+.ratingBox {
+  position: relative;
+  margin-top: 23px;
+}
+
+.descBox {
+  grid-row: 3/4;
+  z-index: 2;
+  justify-self: end;
+  justify-items: right;
+  align-items: end;
+  margin-right: 10px;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.64);
+  width: 230px;
+  height: 100px;
+  padding: 15px;
+  margin-bottom: 23px;
+  margin-left: 50px;
+}
+
+.textWrapper {
+  font-size: 13px;
+  color: white;
+  line-height: 1.6em;
+  height: 100px;
+  overflow: hidden;
+}
+
+.buttonAlign {
+  margin-left: 30px;
+}

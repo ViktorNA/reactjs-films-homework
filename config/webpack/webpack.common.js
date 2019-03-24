@@ -31,21 +31,48 @@ module.exports = {
                 },
             },
             {
-                test: /\.(scss|css)$/,
+                test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true,
-                            modules: true,
-                            localIdentName: '[local]___[hash:base64:5]',
-                        },
-                    },
-                    {
-                        loader: 'sass-loader',
-                    },
+                {
+                    loader: "style-loader"
+                },
+                {
+                    loader: "css-loader",
+                    options: {
+                        sourceMap: true,
+                        modules: true,
+                        localIdentName: "[local]___[hash:base64:5]"
+                    }
+                },
+                {
+                    loader: "sass-loader"
+                }
                 ]
+            },
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: 'style-loader?sourceMap'
+                },
+                {
+                    loader: 'css-loader?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]'
+                }
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                loader: 'file-loader',
+                options: {
+                    limit: 244 * 1024,
+                    name: 'assets/images/[name]-[hash].[ext]',
+                },
+            },
+            {
+                test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/fonts/[name]-[hash].[ext]',
+                },
             }
         ]
     }

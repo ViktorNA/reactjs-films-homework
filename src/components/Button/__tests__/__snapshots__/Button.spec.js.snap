@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test viewInfo works correctly 1`] = `
+<button
+  className="primary common"
+  onClick={[Function]}
+  type="button"
+>
+  Watch Now
+</button>
+`;
+
+exports[`Snapshot test watchNow works correctly 1`] = `
+<button
+  className="primary common"
+  onClick={[Function]}
+  type="button"
+>
+  Watch Now
+</button>
+`;

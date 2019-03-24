@@ -1,0 +1,108 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding: 0 80px 0;
+  box-sizing: border-box;
+}
+
+.item {
+  font-size: 14px;
+  color: #0aaee4;
+  padding: 0;
+  padding-bottom: 3px;
+  margin-right: 20px;
+  border: 0;
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+.stick {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  top: -2px;
+  border-bottom: 2px solid #0aaee4;
+}
+
+.leftStick {
+  composes: stick;
+  transform: rotate(40deg);
+  left: 2px;
+}
+
+.rightStick {
+  composes: stick;
+  transform: rotate(-40deg);
+}
+
+.stickBox {
+  display: inline;
+  position: absolute;
+  margin-left: -35px;
+  background-color: #f5f6f6;
+}
+
+.blocks {
+  display: inline-grid;
+  grid-gap: 1px;
+  width: 17px;
+  grid-template-columns: auto auto;
+  margin: 3px;
+}
+
+.block {
+  background-color: rgba(59, 180, 224, 0.8);
+  width: 8px;
+  height: 7px;
+  border-radius: 1px;
+}
+
+.sortWrap {
+  background-color: rgba(59, 180, 224, 0);
+  border: 0;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lines {
+  composes: blocks;
+  grid-template: 1fr/1fr;
+}
+
+.line {
+  composes: block;
+  background-color: rgba(36, 43, 45, 0.15);
+  width: 17px;
+}
+
+.left {
+  display: inline-block;
+}
+
+.right {
+  display: inline-block;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+select {
+  color: #0aaee4;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  outline: 0;
+}
+
+.active {
+  border-bottom: 2px solid #0aaee4;
+  font-weight: bold;
+}
